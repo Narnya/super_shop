@@ -14,7 +14,7 @@ $header_config = [
 include('parts/header.php');
 ?>
 
-<div>Главная страница\</div>
+<div>Моя главная страница\</div>
 
 
 <?php
