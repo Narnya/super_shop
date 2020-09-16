@@ -10,13 +10,15 @@ class Catalog{
         this.$catalog = document.querySelector('.catalog');
         this.products = [];
         this.$loader = this.$catalog.querySelector('.loader');
+        //this.categoryid = this.$catalog.getAttribute('data-category-id');
+        this.categoryId = this.$catalog.dataset.categoryId;
     }
     load(){
         //Будет загружать данные по ajax
         //после загрузки будет взывать метод render
         this.showLoader();
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', '/handlers/handler_catalog.php');
+        xhr.open('GET', `/handlers/handler_catalog.php?category_id=${this.categoryId}`);
         xhr.send();
 
         xhr.addEventListener('load', ()=>{

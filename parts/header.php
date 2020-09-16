@@ -19,3 +19,10 @@ include('parts/header_conf.php');
 </head>
 <body>
     <div class="wrapper">
+    <header>
+        <nav>
+            <a href="/catalog.php?category_id=1">Женщинам</a>
+            <a href="/catalog.php?category_id=2">Мужщинам</a>
+            <a href="/catalog.php?category_id=3">Детям</a>
+        </nav>
+    </header>

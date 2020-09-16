@@ -12,6 +12,8 @@ $header_config = [
 ];
 
 include('parts/header.php');
+
+d($_SESSION['basket']);
 ?>
 
 <div>Корзина</div>
