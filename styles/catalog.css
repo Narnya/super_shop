@@ -9,17 +9,20 @@
 }
 
 .catalog-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .catalog-item {
-  width: 20%;
+  display: block;
+  width: 80%;
   text-align: center;
   transition: .3s ease;
   cursor: pointer;
   text-decoration: none;
   color: black;
+  margin: 20px;
 }
 
 .catalog-item:hover {
@@ -57,5 +60,32 @@
 .catalog-sort option#xyz option {
   outline: 0px;
   appearance: none;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+
+.pagination div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: #ffffff;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.pagination div:hover, .pagination div.active {
+  background-color: white;
+  color: #000000;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=catalog.css.map */

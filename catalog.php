@@ -54,9 +54,15 @@ d($category);
     </div>
 
     <div class="catalog-list">
-
     </div>
     <div class="loader">Загрузка...</div>
+
+    <div class="pagination">
+        <!-- <div class="pages-number active">1</div>
+        <div class="pages-number">2</div>
+        <div class="pages-number">3</div>
+        <div class="pages-number">4</div> -->
+    </div>
 </div>
 
 <?php
