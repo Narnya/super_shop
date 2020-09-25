@@ -11,5 +11,4 @@ $productBtn.addEventListener('click', function() {
     xhr.addEventListener('load', function(){
         console.log(xhr.response);
     })
-
 })

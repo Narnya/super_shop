@@ -32,12 +32,32 @@ d($category);
         <div class="catalog-subtitle">Все товары</div>
     </div>
 
+    <div class="catalog-sort">
+        <select name="" id="" aria-placeholder="Категория">
+            <option value="">Категория</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <select name="" id="" aria-placeholder="Размер">
+            <option value="">Размер</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+        <select name="" id="" aria-placeholder="Стоимость">
+            <option value="">Стоимость</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+
     <div class="catalog-list">
 
     </div>
     <div class="loader">Загрузка...</div>
 </div>
-
 
 <?php
 

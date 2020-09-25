@@ -18,7 +18,6 @@ d($_SESSION['basket']);
 
 <div>Корзина</div>
 
-
 <?php
 $footer_config = [
     'script' => 'basket.js'

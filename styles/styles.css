@@ -7,8 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,12 +26,8 @@ body {
   left: 0;
   bottom: 0;
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   background-color: rgba(128, 128, 128, 0.534);
@@ -41,8 +36,392 @@ body {
 }
 
 .loader.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav a {
+  padding-left: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: black;
+  margin-right: 20px;
+}
+
+.logo a {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.header-items {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-items a {
+  padding-left: 5px;
+}
+
+.header-items div {
+  padding-left: 20px;
+}
+
+.login-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-label.icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icons/account.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.basket-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.basket-label.icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icons/bascet.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer a, footer p {
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #6b6b6b;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.collection, .magazine, .social {
+  display: flex;
+  flex-direction: column;
+}
+
+.magazine {
+  border-left: 1px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
+  padding: 0 15% 0 15%;
+}
+
+.social.links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.tw, .fb, .inst {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5e5e5e;
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.tw {
+  background-image: url("../images/icons/twitter.png");
+}
+
+.fb {
+  background-image: url("../images/icons/facebook.png");
+}
+
+.inst {
+  background-image: url("../images/icons/instagram.png");
+}
+
+.main-page-header {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page-header h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.main-page-header p {
+  margin-top: 40px;
+  text-transform: inherit;
+  color: #bebebe;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.main-page-header div {
+  margin-top: 40px;
+  padding: 30px 50px;
+  border: 1px solid grey;
+}
+
+.main-page-header div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+#grid {
+  margin-top: 50px;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #ffffff;
+}
+
+#grid-1 {
+  display: grid;
+  grid-template-rows: 66.66667% 33.33333%;
+  grid-template-columns: 1fr;
+}
+
+#grid-2 {
+  display: grid;
+  grid-template-rows: 33.33333% 33.33333% 33.33333%;
+  grid-template-columns: 1fr;
+}
+
+#grid-3 {
+  display: grid;
+  grid-template-rows: 33.33333% 33.33333% 33.33333%;
+  grid-template-columns: 1fr;
+}
+
+#grid-4 {
+  display: grid;
+  grid-template-rows: 33.33333% 66.66667%;
+  grid-template-columns: 1fr;
+}
+
+#jeans-jaket {
+  background-image: url("../images/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#belts {
+  background-image: url("../images/5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#new_items {
+  background-color: #c0c0c0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#jeans {
+  background-image: url("../images/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#accessories {
+  background-color: #8d8d8d;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#boots {
+  background-image: url("../images/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#low-price {
+  background-color: #c0c0c0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sports-wear {
+  background-image: url("../images/6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sports-wear-cover {
+  background-color: #b8b8b875;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sports-wear-cover p {
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#boots-description {
+  background-image: url("../images/5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#boots-description p {
+  text-transform: uppercase;
+}
+
+#child-wear {
+  background-image: url("../images/4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#jeans-jaket, #new_items, #jeans, #accessories, #low-price, #boots-description, #child-wear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+}
+
+#jeans-jaket p, #new_items p, #jeans p, #accessories p, #low-price p, #boots-description p, #child-wear p {
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#jeans-jaket h3, #new_items h3, #jeans h3, #accessories h3, #low-price h3, #boots-description h3, #child-wear h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#jeans-jaket h3, #new_items h3, #jeans h3, #accessories h3, #low-price h3, #boots-description h3, #child-wear h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#jeans-jaket h4, #new_items h4, #jeans h4, #accessories h4, #low-price h4, #boots-description h4, #child-wear h4 {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 14;
+}
+
+.offer-form {
+  padding: 250px 0 250px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer-form h1 {
+  text-transform: uppercase;
+}
+
+.offer-form p {
+  text-transform: lowercase;
+  font-style: italic;
+  padding: 10px 0 10px 0;
+  color: #8d8d8d;
+}
+
+#offer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#offer-form p {
+  text-transform: inherit;
+}
+
+#offer-form-inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+#offer-form-inputs input {
+  border: 1px solid #c4c4c4;
+  height: 40px;
+  padding: 5px;
+  outline: none;
+}
+
+#offer-form-inputs input[type="text"] {
+  border-right: 0;
+  width: 350px;
+}
+
+#offer-form-inputs input[type="submit"] {
+  border-left: 0;
+  width: 150px;
+  background-color: #ffc21c;
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=styles.css.map */

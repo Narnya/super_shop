@@ -5,7 +5,9 @@
     $response = [
         'products' => []
     ];
-
+    $resposne_1 = [
+        'cirkle' => [] 
+    ];
     //$sql_products = "SELECT * FROM products";
     $sql_products = "SELECT products.* FROM products INNER JOIN product_category 
     ON products.id = product_category.product_id 
