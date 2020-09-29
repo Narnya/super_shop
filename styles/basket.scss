@@ -1,0 +1,140 @@
+.basket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 36px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    p{
+        font-style: italic;
+        text-transform: initial; // Начинается с заглавной буквы
+        margin-top: 10px;
+    }
+    input, select{
+        width: 100%;
+        color: grey;
+        margin-top: 20px;
+        outline: none;
+    }
+    select{
+        padding: 5px;
+    }
+    input{
+        padding: 10px;
+    }
+
+    label{
+        width: 100%;
+        text-transform: uppercase;
+        text-align: left;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+.basket-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(247, 247, 247);
+    padding: 50px 0;
+    background-color: rgba(248, 248, 248, 0.61);
+}
+
+.basket-adres-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 500px;
+
+}
+
+.names, .city-info, .contact-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    input{
+        width: 48%;
+        color: rgb(148, 148, 148);
+        margin-top: 20px;
+        outline: none;
+    }   
+}
+
+.splitter{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        div{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            p{
+                display: block;
+                position: absolute;
+                background-color: orange;
+                height: 2px;
+                width: 30px;
+            }
+        }
+    }
+}
+
+.down-line{
+    transform: rotate(45deg);
+}
+
+.up-line{
+    transform: rotate(-45deg);
+}
+
+.payment-option{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: rgba(248, 248, 248, 0.61);
+    border: 1px solid rgb(247, 247, 247);
+
+    form{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    select{
+        width: 100%;
+    }
+
+    input[type=submit]{
+        padding: 10px;
+        background-color: orange;
+        width: 30%;
+        outline: none;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+}

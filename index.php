@@ -12,6 +12,7 @@ $header_config = [
 ];
 
 include('parts/header.php');
+
 ?>
 
 <div class="main-page-header">

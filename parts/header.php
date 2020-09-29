@@ -37,7 +37,7 @@ include('parts/header_conf.php');
             </div>
             <div class="basket-label">
                 <div class="basket-label icon"></div>
-                <a href="/">Корзина</a>
+                <a href="../basket.php">Корзина</a>
             </div>
         </div>
     </header>

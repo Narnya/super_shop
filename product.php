@@ -29,9 +29,11 @@ $sql_template = "SELECT*FROM products WHERE id='{$_GET['id']}'";
 $result = mysqli_query($link, $sql_template);
 $template = mysqli_fetch_assoc($result);
 // d($template);
+
 } else {
     header('Location: /catalog.php');   
 }
+
 ?>
 
 <div class="product">
